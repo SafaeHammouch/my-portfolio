@@ -1,0 +1,67 @@
+:host { display:block; }
+main { max-width:1120px; padding:0 42px; margin:auto; }
+.site-header { height:88px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid var(--line); }
+.wordmark { font:700 25px/1 var(--serif); letter-spacing:-1px; color:var(--ink); text-decoration:none; }
+.wordmark span, .links span, .project a span { color:var(--accent); }
+nav { display:flex; gap:26px; }
+nav a, footer a { color:var(--soft); text-decoration:none; font-size:14px; }
+nav a:hover, nav a.active { color:var(--ink); }
+.hero { min-height:550px; display:flex; flex-direction:column; justify-content:center; padding:70px 0; }
+.eyebrow { margin:0 0 16px; color:var(--accent); font:600 11px/1.2 var(--sans); text-transform:uppercase; letter-spacing:1.4px; }
+h1, h2, h3, p { margin-top:0; }
+h1 { font:400 clamp(54px,9vw,108px)/.92 var(--serif); letter-spacing:-.06em; max-width:760px; }
+.hero-title { margin:18px 0 0; font-size:19px; color:var(--soft); }
+.intro { max-width:570px; margin:38px 0 28px; font:400 24px/1.42 var(--serif); }
+.links { display:flex; flex-wrap:wrap; gap:18px 28px; }
+.links a { font-size:14px; color:var(--ink); text-underline-offset:4px; }
+.section { padding:122px 0; border-top:1px solid var(--line); }
+.section-heading { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:54px; }
+.section-heading h2, .github-panel h2 { margin:0; font:400 clamp(35px,5vw,55px)/1 var(--serif); letter-spacing:-.045em; }
+.project { display:grid; grid-template-columns:70px 1fr auto; gap:24px; padding:34px 0; border-top:1px solid var(--line); }
+.project:last-child { border-bottom:1px solid var(--line); }
+.number { color:var(--accent); font-size:13px; }
+h3 { font:400 29px/1.1 var(--serif); letter-spacing:-.025em; }
+.project p, .experience p, .post p { max-width:600px; color:var(--soft); line-height:1.65; }
+.project > a { color:var(--ink); font-size:14px; text-decoration:none; }
+.tags { display:flex; flex-wrap:wrap; gap:7px; margin-top:18px; }
+.tags span { padding:5px 9px; color:var(--soft); border:1px solid var(--line); border-radius:20px; font-size:11px; }
+.github-panel { margin:0 -42px; padding:95px 42px; background:var(--panel); display:grid; grid-template-columns:1fr auto; gap:40px; }
+.quiet-link { align-self:center; color:var(--ink); font-size:14px; }
+.repo-grid { grid-column:1/-1; display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; }
+.repo { min-height:170px; padding:22px; color:var(--ink); background:var(--paper); border:1px solid var(--line); text-decoration:none; transition:transform .2s, box-shadow .2s; }
+.repo:hover { transform:translateY(-4px); box-shadow:5px 7px 0 var(--accent); }
+.repo h3 { margin-bottom:12px; font-size:22px; }
+.repo p { margin:0 0 24px; color:var(--soft); font-size:13px; line-height:1.5; }
+.repo small { color:var(--soft); }
+.repo b { margin-left:11px; font-weight:500; }
+.muted { grid-column:1/-1; color:var(--soft); }
+.experience { display:grid; grid-template-columns:180px 1fr; gap:32px; padding:30px 0; border-top:1px solid var(--line); }
+.experience h3 { margin-bottom:5px; }
+.experience h4 { margin:0 0 18px; color:var(--accent); font-size:13px; font-weight:600; }
+.writing { padding-bottom:80px; }
+.post { display:flex; justify-content:space-between; gap:30px; padding:28px 0; border-top:1px solid var(--line); color:var(--ink); text-decoration:none; }
+.post h3 { margin-bottom:9px; font-size:27px; }
+.post p { margin-bottom:0; }
+.post > span { color:var(--soft); font-size:12px; white-space:nowrap; }
+footer { display:flex; justify-content:space-between; padding:28px 0 45px; border-top:1px solid var(--line); color:var(--soft); font-size:13px; }
+footer p { margin:0; }
+.loading { display:grid; min-height:100vh; place-items:center; color:var(--soft); }
+
+@media (max-width:650px) {
+  main { padding:0 22px; }
+  .site-header { height:70px; }
+  nav { gap:15px; }
+  .hero { min-height:480px; }
+  .intro { font-size:21px; }
+  .section { padding:80px 0; }
+  .section-heading { display:block; margin-bottom:37px; }
+  .project { grid-template-columns:1fr; gap:12px; }
+  .project > a { margin-top:7px; }
+  .github-panel { margin:0 -22px; padding:68px 22px; display:block; }
+  .quiet-link { display:inline-block; margin:18px 0 26px; }
+  .repo-grid { grid-template-columns:1fr; }
+  .experience { grid-template-columns:1fr; gap:5px; }
+  .experience > p { margin-bottom:0; }
+  .post { display:block; }
+  .post > span { display:block; margin-top:15px; }
+}

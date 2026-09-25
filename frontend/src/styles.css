@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --paper: #12141a;   /* page background */
+  --panel: #1a1d24;   /* GitHub panel background, slightly lighter */
+  --ink: #EDEDEF;     /* primary text */
+  --soft: #9A9FAE;    /* muted / secondary text */
+  --accent: #E3A45D;  /* accent color used for eyebrows, numbers, hovers */
+  --line: #262A33;    /* hairline borders */
+  --serif: 'Fraunces', Georgia, serif;
+  --sans: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+a {
+  cursor: pointer;
+}
