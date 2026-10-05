@@ -5,3 +5,4 @@ portfolio:
   github-username: ${GITHUB_USERNAME:safaehammouch}
   github-token: ${GITHUB_TOKEN:}
   github-cache-minutes: 15
+  allowed-origins=${ALLOWED_ORIGINS:http://localhost:4200}
